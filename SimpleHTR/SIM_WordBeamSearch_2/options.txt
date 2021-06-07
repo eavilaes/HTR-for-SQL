@@ -1,0 +1,4 @@
+Options:
+DECODER_TYPE = DecoderType.WordBeamSearch
+fnCharList = '../model/charList.txt'
+fnCorpus = '../data/corpusGood2.txt'
