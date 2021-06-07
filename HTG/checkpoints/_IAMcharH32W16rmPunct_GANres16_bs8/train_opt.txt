@@ -1,0 +1,187 @@
+----------------- Options ---------------
+                   BN_eps: 1e-05                         
+                     D_B1: 0.0                           
+                     D_B2: 0.999                         
+                   D_attn: 64                            
+                     D_ch: 64                            
+                  D_depth: 1                             
+                   D_fp16: False                         
+                   D_init: N02                           	[default: ortho]
+                     D_lr: 0.0002                        
+        D_mixed_precision: False                         
+                     D_nl: relu                          
+                  D_ortho: 0.0                           
+                  D_param: SN                            
+                   D_wide: True                          
+                     G_B1: 0.0                           
+                     G_B2: 0.999                         
+                   G_attn: 64                            
+             G_batch_size: 0                             
+                     G_ch: 64                            
+                  G_depth: 1                             
+              G_eval_mode: False                         
+                   G_fp16: False                         
+                   G_init: N02                           	[default: ortho]
+                     G_lr: 0.0002                        	[default: 5e-05]
+        G_mixed_precision: False                         
+                     G_nl: relu                          
+                  G_ortho: 0.0                           
+                  G_param: SN                            
+                 G_shared: False                         
+                   OCR_B1: 0.0                           
+                   OCR_B2: 0.999                         
+           OCR_Prediction: CTC                           
+       OCR_Transformation: none                          
+    OCR_feature_extractor: RCNN                          
+                 OCR_init: N02                           
+                   OCR_lr: 0.0002                        
+            OCR_output_nc: 512                           
+                   SN_eps: 1e-08                         
+         accumulate_stats: False                         
+                 adam_eps: 1e-08                         
+                 alphabet: Only thewigsofrcvdampbkuq.A-210xT5'MDL,RYHJ"ISPWENj&BC93VGFKz();#:!7U64Q8?+*ZX/%	[default: alphabet]
+                      aug: False                         
+             aug_dataroot: None                          
+               batch_size: 8                             	[default: 64]
+                    beta1: 0.5                           
+                 bg_color: white                         
+                bn_linear: SN                            
+            bottom_height: 4                             
+             bottom_width: 4                             
+               capitalize: False                         
+          checkpoints_dir: ./checkpoints                 
+                clip_grad: 0.0                           
+                  collate: True                          
+           continue_train: False                         
+                crop_size: 32                            
+            cross_replica: False                         
+                 dataroot: datasets/IAMofflineWords_tr_prepared_height32char10to18hgap0wgap0disWide_ressmall	[default: datasets/CIFAR10]
+             dataset_mode: text                          	[default: folderClass]
+                    dim_z: 128                           
+              display_env: main                          
+             display_freq: 400                           
+               display_id: 1                             
+            display_ncols: 4                             
+             display_port: 8195                          	[default: 8096]
+           display_server: http://localhost              
+          display_winsize: 256                           
+            each_img_size: 28                            
+                      ema: False                         
+                ema_decay: 0.9999                        
+                ema_start: 0                             
+           embedding_size: 128                           
+                    epoch: latest                        
+              epoch_count: 1                             
+          experiment_name:                               
+              first_layer: True                          
+                 gan_mode: lsgan                         
+                 gb_alpha: 0.16                          
+                    gb_lr: 0.001                         
+                  gpu_ids: 0                             
+             grad_balance: True                          	[default: False]
+                 hashname: False                         
+                   height: 128                           
+              height_char: 32                            
+          hidden_size_OCR: 256                           
+                     hier: True                          	[default: False]
+                     imgH: 32                            
+                 input_nc: 1                             
+                  isTrain: True                          	[default: None]
+                  labeled: True                          
+                len_vocab: 80                            	[default: None]
+                      lex: ???/RawDatasets/Lexique/english_words.txt	[default: datasets/Lexique/Lexique383.tsv]
+              load_in_mem: False                         
+                load_iter: 0                             	[default: 0]
+                load_size: 32                            
+             load_weights:                               
+            log_D_spectra: False                         
+            log_G_spectra: False                         
+                logs_root: logs                          
+                 logstyle: %3.3e                         
+                       lr: 0.0002                        
+           lr_decay_iters: 50                            
+                lr_policy: linear                        
+         max_dataset_size: inf                           
+                max_width: 512                           
+                   method: tsne                          
+                    model: CharInterGAN                  	[default: BigGAN]
+                     mybn: False                         
+                     name: charInterGAN16Fix1hotZ_IAMofflinehWords32wid10to18batch8_w1noBeta_lreminus4_1gpu	[default: experiment_name]
+              name_suffix:                               
+                  new_OCR: False                         
+                    niter: 100                           
+              niter_decay: 100                           
+                   no_fid: False                         
+                  no_flip: True                          	[default: False]
+                  no_html: False                         
+               norm_style: bn                            
+            num_D_SV_itrs: 1                             
+                num_D_SVs: 1                             
+              num_D_steps: 2                             
+            num_G_SV_itrs: 1                             
+                num_G_SVs: 1                             
+        num_accumulations: 1                             
+          num_best_copies: 2                             
+         num_critic_train: 4                             	[default: 1]
+               num_epochs: 500                           	[default: 100]
+     num_inception_images: 50000                         
+               num_layers: 4                             
+           num_layers_OCR: 1                             
+          num_save_copies: 2                             
+num_standing_accumulations: 16                            
+              num_threads: 4                             
+              num_workers: 8                             
+                  one_hot: True                          
+                one_hot_z: True                          	[default: False]
+              output_name: tsne                          
+              output_size: 2500                          
+              output_type: scatter                       
+             overlap_char: 32                            
+                 parallel: False                         
+                     pbar: mine                          
+          percent_labeled: 100                           
+                    phase: train                         
+                   phi_B1: 0.0                           
+                   phi_B2: 0.999                         
+                 phi_init: N02                           
+                   phi_lr: 0.0002                        
+               pin_memory: True                          
+                pool_size: 50                            
+             portion_data: 1.0                           
+               preprocess: no_preprocess                 	[default: resize_and_crop]
+               print_freq: 100                           
+           reconstruction: False                         
+               resolution: 16                            	[default: 32]
+                   resume: False                         
+             samples_root: samples                       
+             save_by_iter: False                         
+          save_epoch_freq: 5                             
+               save_every: 500                           
+         save_latest_freq: 5000                          
+                     seed: 0                             
+           serial_batches: False                         
+               shared_dim: 0                             
+                  shuffle: True                          	[default: False]
+                skip_init: False                         
+                  split_D: False                         
+                   suffix:                               
+          sv_log_interval: 10                            
+                      svd: True                          
+            test_dataroot: datasets/RIMEStest_prepared_height32varyingWidth/
+               test_every: 5000                          
+             toggle_grads: True                          
+                    train: True                          
+       unlabeled_dataroot: None                          
+         update_html_freq: 1000                          
+                  use_ema: False                         
+   use_multiepoch_sampler: False                         
+                  use_rnn: False                         
+             val_dataroot: datasets/RIMESval_prepared_height32varyingWidth/
+                  verbose: False                         
+          weight_OCR_fake: 1.0                           	[default: 0.01]
+               which_best: IS                            
+           which_train_fn: GAN                           
+               width_char: 64                            
+                   z_dist: normal                        
+                    z_var: 1.0                           
+----------------- End -------------------

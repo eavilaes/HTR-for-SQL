@@ -1,0 +1,113 @@
+----------------- Options ---------------
+                   BN_eps: 1e-05                         
+                   D_attn: 64                            
+                     D_ch: 64                            
+                  D_depth: 1                             
+                   D_fp16: False                         
+                   D_init: N02                           
+        D_mixed_precision: False                         
+                     D_nl: relu                          
+                  D_ortho: 0.0                           
+                  D_param: SN                            
+                   D_wide: True                          
+                   G_attn: 64                            
+             G_batch_size: 0                             
+                     G_ch: 64                            
+                  G_depth: 1                             
+                   G_fp16: False                         
+                   G_init: N02                           
+        G_mixed_precision: False                         
+                     G_nl: relu                          
+                  G_ortho: 0.0                           
+                  G_param: SN                            
+                 G_shared: False                         
+                 OCR_init: N02                           
+            OCR_output_nc: 512                           
+                   SN_eps: 1e-08                         
+         accumulate_stats: False                         
+                 adam_eps: 1e-08                         
+                 alphabet: SuitemlrsachvpoIyMèfqC-dn'bjxgéJçzVD206A5EPBêâLû°9NT314àH8F7ôQYOZKî/GUXWRù%kw²Éëï	[default: alphabet]
+             aspect_ratio: 1.0                           
+                      aug: False                         
+             aug_dataroot: None                          
+               batch_size: 8                             
+                bn_linear: SN                            
+            bottom_height: 4                             
+             bottom_width: 4                             
+               capitalize: False                         
+          checkpoints_dir: ./checkpoints                 
+                    clamp: inf                           
+                  collate: True                          
+                crop_size: 32                            
+            cross_replica: False                         
+                 dataname: RIMEScharH32W16               
+                 dataroot: Datasets/RIMES/h32char16to17/tr	[default: None]
+             dataset_mode: text                          
+                    dim_z: 128                           
+              display_env: main                          
+             display_port: 8096                          
+           display_server: http://localhost              
+          display_winsize: 256                           
+                    epoch: latest                        
+                     eval: False                         
+              first_layer: True                          
+                     flip: False                         
+                  gpu_ids: 0                             
+          hidden_size_OCR: 256                           
+                     imgH: 32                            
+                 input_nc: 1                             
+                  isTrain: False                         	[default: None]
+                  labeled: True                          
+                len_vocab: 81                            	[default: None]
+                      lex: Datasets/Lexicon/Lexique383.tsv	[default: ]
+              load_in_mem: False                         
+                load_iter: 0                             	[default: 0]
+                load_size: 32                            
+         max_dataset_size: inf                           
+                    model: ScrabbleGAN                   
+                     mybn: False                         
+                  n_synth: 100 200 400                   
+                     name: _RIMEScharH32W16_GANres16_bs8 	[default: ]
+              name_prefix:                               
+        no_concat_dataset: False                         
+                  no_hier: False                         
+               no_shuffle: False                         
+               norm_style: bn                            
+                    ntest: inf                           
+            num_D_SV_itrs: 1                             
+                num_D_SVs: 1                             
+              num_D_steps: 2                             
+            num_G_SV_itrs: 1                             
+                num_G_SVs: 1                             
+        num_accumulations: 1                             
+               num_epochs: 100                           
+           num_layers_OCR: 1                             
+num_standing_accumulations: 16                            
+                 num_test: 50                            
+              num_threads: 4                             
+              num_workers: 8                             
+                  one_hot: True                          
+                one_hot_k: 1                             
+                 parallel: False                         
+                 path_lex: ./datasets/Lexique/english_words.txt
+                    phase: test                          
+               pin_memory: True                          
+               preprocess: no_preprocess                 
+                randChars: False                         
+               resolution: 16                            	[default: 16]
+              results_dir: ./results/                    
+                     seed: 0                             
+           serial_batches: False                         
+               shared_dim: 0                             
+            single_writer: False                         
+                skip_init: False                         
+                  split_D: False                         
+                   suffix:                               
+             toggle_grads: True                          
+                    train: True                          
+   use_multiepoch_sampler: False                         
+                  use_rnn: False                         
+                  verbose: False                         
+                   z_dist: normal                        
+                    z_var: 1.0                           
+----------------- End -------------------
